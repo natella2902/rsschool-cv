@@ -22,22 +22,23 @@
 * __Vue 3, React__
  
 ### Code Example
-```function highAndLow(numbers){
-   let res = numbers.split(' ').sort((a, b) => b - a)
+```
+  function highAndLow(numbers){
+     let res = numbers.split(' ').sort((a, b) => b - a)
      return `${res[0]} ${res[res.length - 1]}`
- }
+  }
 ```
 ### Experience
 I have experience in freelance projects and work experience in my current company
 https://natella2902.github.io/Chocco/dist/
  
 ### Education
-* University: Donetsk National University, master of Finence
-* Courses:
+* __University__: Donetsk National University, master of Finence
+* __Courses__:
    * __LoftSchool (2019-2020)__ _(JavaScript, Improved web-developer)_
    * __Vladilen Minin (2021-current time)__ _(Vue3, Junior Frontend web-developer, React)_
    * __Rolling Scopes School (2021 - current time)__ _(Frontend web-developer)_
 
 ## Languages
-* English B1 (Learning lenguage with EnglishFirst)
-* Russian, Ukrainian (native speker)
+* __English B1__ (Learning lenguage with EnglishFirst)
+* __Russian, Ukrainian__ (native speker)
