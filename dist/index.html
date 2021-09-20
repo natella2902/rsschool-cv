@@ -3,54 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>CV Zhelonkina</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
-    <header class="header"></header>
+    <header class="header">
+      <div class="container header__container">
+        <div class="menu__button">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div>
+      </div>
+    </header>
     <section class="hero">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">Education and Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="#code" class="nav__link">Code Example</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills and Languages</a>
+          </li>
+        </ul>
+      </nav>
       <div class="container hero__container">
         <div class="hero__content">
           <h2 class="hero__title">
             Zhelonkina Nataliya <br>
-            Junior Frontend Developer
+            Junior <br>
+            Frontend Developer
           </h2>
-          <aside>
-            <ul class="contacts__list">
-              <li class="contacts__item">Location: Saint-Petersburg, Russia</li>
-              <li class="contacts__item">
-                <a href="tel:+79111041973">
-                  Phone: +7 911 104 19 73
-                </a>
-               </li>
-              <li class="contacts__item">Telegram: @NatellaZzz</li>
-              <li class="contacts__item">
-                <a href="https://github.com/natella2902" class="my-github__link">Github: Natella2902</a>
-              </li>
-            </ul>
-          </aside>
+          <ul class="contacts__list" id="contacts">
+            <li class="contacts__item">Location: Saint-Petersburg, Russia</li>
+            <li class="contacts__item">
+              <a href="tel:+79111041973">
+                Phone: +7 911 104 19 73
+              </a>
+             </li>
+            <li class="contacts__item">Telegram: @NatellaZzz</li>
+            <li class="contacts__item">
+              <a href="https://github.com/natella2902" class="my-github__link">Github: Natella2902</a>
+            </li>
+          </ul>
         </div>
         <div class="hero__img">
-
         </div>
       </div>
     </section>
     <section class="about about__container">
       <div class="container">
-        <div class="me container__flex">
+        <div class="me container__flex" id="about">
           <h2 class="subtitle">About Me</h2>
           <p class="me__text">I have been studying web development for about 2 years and have a strong desire to work and develop in this field.
             <br>
             I’m looking for a creative hard-skill team to work with and together get better</p>
         </div>
       </div>
-      <div class="container">
+      <div class="container education__experience__container">
         <div class="education container__flex">
           <h2 class="subtitle">Education</h2>
-          <ul class="education__list">
+          <ul class="education__list" id="education">
             <li class="education__item">
               <b>University:</b>
               Donetsk National University, Master of Finance
@@ -73,7 +99,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="code container__flex">
+        <div class="code container__flex" id="code">
           <h2 class="subtitle">Code Example</h2>
           <p class="code__example">
             function highAndLow(numbers) {
@@ -84,7 +110,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="skills container__flex">
+        <div class="skills container__flex" id="skills">
           <h2 class="subtitle">Skills</h2>
           <ul class="skills__list">
             <li class="skills__item">HTML5</li>
@@ -116,5 +142,6 @@
       </div>
     </footer>
   </div>
+  <script src="main.min.js"></script>
 </body>
 </html>
