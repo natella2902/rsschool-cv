@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Zhelonkina</title>
+  <link rel="stylesheet" href="main.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <div class="menu__button">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">Education and Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="#code" class="nav__link">Code Example</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills and Languages</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h2 class="hero__title">
+            Zhelonkina Nataliya <br>
+            Junior <br>
+            Frontend Developer
+          </h2>
+          <ul class="contacts__list" id="contacts">
+            <li class="contacts__item">Location: Saint-Petersburg, Russia</li>
+            <li class="contacts__item">
+              <a href="tel:+79111041973">
+                Phone: +7 911 104 19 73
+              </a>
+             </li>
+            <li class="contacts__item">Telegram: @NatellaZzz</li>
+            <li class="contacts__item">
+              <a href="https://github.com/natella2902" class="my-github__link">Github: Natella2902</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__img">
+        </div>
+      </div>
+    </section>
+    <section class="about about__container">
+      <div class="container">
+        <div class="me container__flex" id="about">
+          <h2 class="subtitle">About Me</h2>
+          <p class="me__text">I have been studying web development for about 2 years and have a strong desire to work and develop in this field.
+            <br>
+            I’m looking for a creative hard-skill team to work with and together get better</p>
+        </div>
+      </div>
+      <div class="container education__experience__container">
+        <div class="education container__flex">
+          <h2 class="subtitle">Education</h2>
+          <ul class="education__list" id="education">
+            <li class="education__item">
+              <b>University:</b>
+              Donetsk National University, Master of Finance
+            </li>
+            <li class="education__item">
+              <b>Courses:</b>
+              <ul class="courses__list">
+                <li class="courses__item">LoftSchool (2019-2020): (JavaScript, Improved web-developer)</li>
+                <li class="courses__item">Vladilen Minin (2021-current time): (Vue3, Junior Frontend web-developer, React)</li>
+                <li class="courses__item">Rolling Scopes School (2021 - current time): (Frontend web-developer)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="experience container__flex">
+          <h2 class="subtitle">Experience</h2>
+          <p class="experience__text">
+            I have experience in freelance projects and work experience in my current company https://natella2902.github.io/Chocco/dist/
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="code container__flex" id="code">
+          <h2 class="subtitle">Code Example</h2>
+          <p class="code__example">
+            function highAndLow(numbers) {
+            let res = numbers.split(' ').sort((a, b) => b - a)
+            return `${res[0]} ${res[res.length - 1]}`
+            }
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="skills container__flex" id="skills">
+          <h2 class="subtitle">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">HTML5</li>
+            <li class="skills__item">CSS/SASS</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">Git</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">Vue 3, React</li>
+          </ul>
+        </div>
+        <div class="languages container__flex">
+          <h2 class="subtitle">Languages</h2>
+          <ul class="lang__list">
+            <li class="lang__item"><b>English B1 </b> (Learning language with EnglishFirst)</li>
+            <li class="lang__item"> <b>Russian, Ukrainian </b> (native speaker)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="logo__rs">
+          <img src="./img/logo-rsschool3.png" alt="logo" class="logo__pic">
+        </div>
+        <div class="info">2021</div>
+        <div class="my-github">
+          <a href="https://github.com/natella2902" class="my-github__link">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.min.js"></script>
+</body>
+</html>
